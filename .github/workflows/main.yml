@@ -24,13 +24,17 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+      
+      # step 1
+      - name: clearing path
+        run: sudo rm -rf /home/admin/web/coachbhabani.com/public_html/*
+        
       # Runs a single command using the runners shell
-      - name: checking user
-        run: whoami
+      - name: moving folders to nginx server
+        run: sudo mv * /home/admin/web/coachbhabani.com/public_html/
 
       # Runs a set of commands using the runners shell
-      - name: path finder
+      - name: reload nginx service
         run: |
-          pwd
+          sudo systemctl reload nginx
           echo success done!!
