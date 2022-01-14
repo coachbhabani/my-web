@@ -1,0 +1,38 @@
+/* background-color */
+.icare-theme-bg-colored, .btn-theme-colored, .line-bottom::after, .icon-theme-colored.icon-dark a, button, input[type="button"], input[type="submit"],
+.btn-slider, .btn-border:focus, .btn-border:hover, .header_nav:not(.scroll-to-fixed-fixed) #cssmenu ul > li::before,.progress-item .progress-bar{
+    background-color: #1d55b6;
+}
+/* darker background */
+.progress-item .progress-bar .percent{
+  background-color: #043c9d;
+}
+/* lighter background */
+.social-links a {
+    background-color: #366ecf;
+}
+/* transparent background */
+.team-block .team-thumb .team-overlay,
+#icare-home-feature-section.layer-overlay.overlay-blue::before,
+.icare-theme-bg-colored-transparent{
+    background-color: rgba(29,85,182,0.9);
+}
+/* background */
+#cssmenu ul li:hover > a, #cssmenu ul li.active > a{
+  background: #1d55b6; 
+}
+/* color */
+.icare-text-colored,.icare-icon-box:hover .icon-hov i{
+  color:#1d55b6;
+}
+/* border */
+.icare-icon-box.icon-rounded-bordered i, .icare-widget .widget-title-border-bottom:after, .pager.theme-colored a {
+    border: 1px solid #1d55b6;
+}
+..btn-border{
+  border-color: #1d55b6;
+}
+.wp-block-quote,
+.commentlist .bypostauthor .media-body {
+  border-left-color: #1d55b6;
+}

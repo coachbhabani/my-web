@@ -1,0 +1,566 @@
+/*
+	Theme Name: icare fitness
+	Description: iCare fitness is free responsive fitness WordPress theme. iCare fitness comes with a lot of awesome of features: Clean and elegant design, Full-width or Boxed layout, Beautifully designed homepage sections – Hero section, Service section, Feature section, News/Blog section, Exra section, Calltoaction Section, Client section, funfact section, Team section, Slider options, Sidebar options, Social icons, Header configuration etc. You can get your site ready to customize with one click demo import option.
+	Version: 1.0.7
+	Author: WebHunt Infotech
+	Template: icare
+	Author URI: http://www.webhuntinfotech.com/
+	License: GNU General Public License v3 or later
+	License URI: http://www.gnu.org/licenses/gpl.html
+	Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, front-page-post-form, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, grid-layout, footer-widgets, blog, portfolio, e-commerce
+	Text Domain: icarefitness
+*/
+/*------------------------------------------
+    01 - General & Basic Styles
+------------------------------------------*/
+.header_nav:not(.scroll-to-fixed-fixed) #cssmenu ul:not(.sub-menu) > li:hover>a,
+.header_nav:not(.scroll-to-fixed-fixed) #cssmenu ul:not(.sub-menu) > li.active>a
+{
+    background: unset !important;
+}
+
+.header_nav:not(.scroll-to-fixed-fixed) #cssmenu ul:not(.sub-menu) > li{
+    cursor: pointer;
+}
+.header_nav:not(.scroll-to-fixed-fixed) #cssmenu ul:not(.sub-menu) > li
+{
+    position: relative;
+}
+
+.header_nav:not(.scroll-to-fixed-fixed) #cssmenu ul:not(.sub-menu) > li:not(:last-child)
+{
+    margin-right: 5px;
+}
+.header_nav:not(.scroll-to-fixed-fixed) #cssmenu ul:not(.sub-menu) > li::before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 0px;
+
+    content: '';
+    transition: all 0.3s;
+    transform: scaleY(0);
+    transform-origin: top;
+
+}
+.header_nav:not(.scroll-to-fixed-fixed) #cssmenu ul:not(.sub-menu) > li:hover::before,
+.header_nav:not(.scroll-to-fixed-fixed) #cssmenu > ul:not(.sub-menu) > li.active::before
+{
+    height: 100%;
+    transform: scaleY(1);
+}
+
+.header_nav:not(.scroll-to-fixed-fixed) #cssmenu ul:not(.sub-menu) > li a
+{	
+    position: relative;
+    z-index: 10;
+}
+
+.icare-transparent #cssmenu > li > a
+{
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .slicknav_nav > li.active > a,
+    .slicknav_nav > li:hover > a
+    {
+        color: #fff !important;
+    }
+}
+
+.header-main
+{
+    position: relative;
+}
+.icare-transparent
+{
+    position: absolute;
+    z-index: 9999;
+
+    width: 100%;
+    height: 90px;
+    margin-bottom: 0;
+}
+
+.icare-transparent .header_nav:not(.scroll-to-fixed-fixed)
+{
+    background-color: transparent;
+}
+
+.pt-20
+{
+    padding-top: 20px !important;
+}
+.mt-20
+{
+    margin-top: 20px;
+}
+
+.section-heading .text-uppercase
+{
+    font-weight: 600;
+}
+
+.hvr-float-shadow:hover .text-center a.icon,
+.hvr-float-shadow:focus .text-center a.icon,
+.hvr-float-shadow:active .text-center a.icon
+{
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+}
+
+.hvr-float-shadow:hover .text-center a.icon:before,
+.hvr-float-shadow:focus .text-center a.icon:before,
+.hvr-float-shadow:active .text-center a.icon:before
+{
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+
+    opacity: 1;
+}
+
+.hvr-float-shadow .text-center a.icon:before
+{
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    left: 5%;
+
+    width: 90%;
+    height: 10px;
+
+    content: '';
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+    -webkit-transition-property: transform, opacity;
+            transition-property: transform, opacity;
+    pointer-events: none;
+
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, .35) 0%, transparent 80%);
+    background:         radial-gradient(ellipse at center, rgba(0, 0, 0, .35) 0%, transparent 80%);
+}
+
+#icare-home-service-section .hvr-float-shadow
+{
+    -webkit-transform: unset;
+            transform: unset;
+}
+
+#icare-home-service-section .hvr-float-shadow:hover,
+#icare-home-service-section .hvr-float-shadow:focus,
+#icare-home-service-section .hvr-float-shadow:active
+{
+    -webkit-transform: unset;
+            transform: unset;
+}
+
+#icare-home-service-section .icare-icon-box
+{
+    box-shadow: unset;
+}
+
+#icare-home-slider-section .text-wrap div.slider-title
+{
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 68px;
+
+    padding: 0 11px;
+
+    -webkit-box-shadow: -3px 4px 11px -2px rgba(0,0,0,.75);
+       -moz-box-shadow: -3px 4px 11px -2px rgba(0,0,0,.75);
+            box-shadow: -3px 4px 11px -2px rgba(0,0,0,.75);
+}
+
+#icare-home-slider-section .text-wrap div.slider-desc
+{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 47px;
+
+    margin-top: 10px;
+    padding: 0;
+}
+
+.btn-theme
+{
+    font-weight: 400;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+}
+
+.btn-theme:not(.btn-border){
+    color: #fff;
+}
+
+.section-heading
+{
+    margin-bottom: 20px;
+}
+
+.team-block .team-thumb .styled-icons
+{
+    background: transparent !important;
+}
+.team-block .styled-icons.icon-dark a:hover
+{
+    color: #fff;
+}
+.team-block .team-overlay h4 small
+{
+    display: inline-block;
+
+    color: #eee;
+}
+
+.team-block .team-info
+{
+    padding: 5px 10px;
+}
+#icare-home-cta-section .cta-wrap-inner
+{
+    top: 50%;
+
+    margin-left: -40px;
+
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+#icare-home-cta-section .cta-wrap-inner
+{
+    position: relative;
+
+    width: 100%;
+}
+
+#icare-home-cta-section .cta-wrap-inner .column
+{
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+#icare-home-cta-section p
+{
+    color: #fff;
+}
+
+.image_frame
+{
+    line-height: 0;
+
+    display: block;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+
+    border-width: 0;
+}
+
+.image_frame .image_wrapper
+{
+    position: relative;
+
+    overflow: hidden;
+}
+
+.if-zoom #Content .image_frame .image_wrapper img
+{
+    max-width: 100.1%;
+}
+
+img.scale-with-grid,
+#Content img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+
+#icare-home-cta-section .one-fourth.cta-wrap
+{
+    width: 25%;
+}
+
+#icare-home-cta-section .cta-wrap
+{
+    position: relative;
+    z-index: 1;
+
+    float: left;
+
+    box-sizing: border-box;
+    height: 300px;
+}
+
+#icare-home-cta-section .container
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+.ml-30p
+{
+    margin-left: 30%;
+}
+
+@media only screen and (max-width: 767px)
+{
+    #icare-home-team-section img.img-full-width
+    {
+        width: 100%;
+    }
+
+    #icare-home-team-section .team-block .team-overlay h4
+    {
+        font-size: 44px;
+    }
+
+    .team-block .team-overlay h4 small
+    {
+        font-size: 24px;
+
+        margin: 12px 0;
+    }
+}
+
+.btn.btn-theme.btn-read-more::after
+{
+    -webkit-transition: none;
+            transition: none;
+}
+.btn-border{
+    border: 2px solid;
+}
+.btn:not(.btn-border):focus,
+.btn:not(.btn-border):hover
+{
+    color: #fff;
+}
+
+.entry-content a.btn,
+.entry-content a.btn:hover
+{
+    color: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.btn-slider
+{
+    font-size: 17px;
+    font-weight: 600;
+
+    padding: 14px 30px;
+
+    transition: all .2s;
+
+    box-shadow: 0 10px 20px rgb(29, 30, 34);
+}
+.btn-slider:hover,
+.btn-slider:focus
+{
+    transform: translateY(-2px);
+
+    box-shadow: 0 15px 20px rgb(29, 30, 34);
+}
+.btn-slider:active
+{
+    transform: translateY(0);
+
+    box-shadow: 0 10px 15px rgba(29, 30, 34,.8);
+}
+#icare-home-cta-section.border-3pt
+{
+    border: unset !important;
+}
+
+.btn-default:hover
+{
+    background-color: #777;
+}
+
+
+.breadcrumb span
+{
+    color: #fff;
+}
+
+
+.inner-header-transform .title
+{
+    color: #fff;
+}
+
+#wp-calendar td#today
+{
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px)
+{
+    #icare-home-cta-section .cta-wrap
+    {
+        height: auto!important;
+    }
+    #icare-home-cta-section .cta-wrap,
+    .column
+    {
+        clear: both;
+
+        width: 100%!important;
+        margin: 0;
+    }
+    #icare-home-cta-section .cta-wrap
+    {
+        height: auto!important;
+    }
+    #icare-home-cta-section .cta-wrap-inner
+    {
+        top: 0!important;
+
+        margin-left: -14px !important;
+
+        -webkit-transform: none!important;
+           -moz-transform: none!important;
+            -ms-transform: none!important;
+             -o-transform: none!important;
+                transform: none!important;
+    }
+    #icare-home-cta-section .cta-wrap-inner .column
+    {
+        height: auto!important;
+        margin: 0 0 20px;
+    }
+    #icare-home-cta-section .image_frame
+    {
+        margin-top: 0!important;
+    }
+    #icare-home-cta-section .cta-ml-zero
+    {
+        margin-left: 0;
+
+        text-align: center;
+    }
+    .call-to-action
+    {
+        padding: 30px;
+    }
+
+    #icare-home-cta-section .cta-wrap-inner img.scale-with-grid
+    {
+        margin-bottom: 20px;
+    }
+
+    #icare-home-slider-section .text-wrap div.slider-title
+    {
+        line-height: 40px;
+    }
+
+    #icare-home-slider-section .text-wrap
+    {
+        top: 57%;
+
+        width: 75%;
+    }
+}
+
+@media all and (max-width: 480px) and (min-width: 220px)
+{
+    #icare-home-slider-section .text-wrap
+    {
+        top: 65%;
+
+        width: 75%;
+    }
+
+    #icare-home-slider-section .text-wrap div.slider-title
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        padding: 6px 0;
+    }
+
+    #icare-home-slider-section .text-wrap div.slider-desc
+    {
+        display: none;
+    }
+
+    .btn-slider
+    {
+        font-size: 14px;
+
+        margin-top: 10px;
+        padding: 6px 16px;
+    }
+}
+
+@media all and (max-width: 767px) and (min-width: 481px)
+{
+    #icare-home-slider-section .text-wrap
+    {
+        top: 60%;
+
+        width: 75%;
+    }
+
+    #icare-home-slider-section .text-wrap div.slider-title
+    {
+        font-size: 18px;
+        line-height: 30px;
+
+        padding: 6px 0;
+    }
+
+    #icare-home-slider-section .text-wrap div.slider-desc
+    {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .btn-slider
+    {
+        font-size: 18px;
+
+        padding: 8px 20px;
+    }
+
+    #icare-home-slider-section .text-wrap div.slider-title,
+    #icare-home-slider-section .text-wrap div.slider-desc
+    {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 992px) and (min-width: 768px)
+{
+    #icare-home-slider-section .text-wrap div.slider-title,
+    #icare-home-slider-section .text-wrap div.slider-desc
+    {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: icarefitness\n"
+"POT-Creation-Date: 2019-05-23 15:21+0530\n"
+"PO-Revision-Date: 2019-05-23 15:23+0530\n"
+"Last-Translator: \n"
+"Language-Team: WebHunt\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: js\n"
+"X-Poedit-SearchPathExcluded-1: inc/kirki\n"
+"X-Poedit-SearchPathExcluded-2: inc/icon-picker/js\n"
+
+#: functions.php:35 template-parts/home-service.php:51
+msgid "Read More"
+msgstr ""
+
+#: functions.php:68
+msgid "Button Text"
+msgstr ""
+
+#: functions.php:86
+msgid "Button Url"
+msgstr ""
+
+#: functions.php:104
+msgid "Description"
+msgstr ""
+
+#: functions.php:126
+msgid "Image"
+msgstr ""
+
+#: functions.php:127
+msgid "Recommended Image Size: 300x300px"
+msgstr ""
+
+#: header.php:25
+msgid "Skip to content"
+msgstr ""
+
+#: template-parts/content-excerpt.php:39
+msgid "No Comments"
+msgstr ""
+
+#: template-parts/content-excerpt.php:39
+msgid "1 Comment"
+msgstr ""
+
+#: template-parts/content-excerpt.php:39
+msgid "% Comments"
+msgstr ""
